@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin:0px;
+    font-family: 'Roboto Slab', serif;
+    user-select: none;
+}
+
+body {
+   
+    background-position: top left;
+    background-size:100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Roboto Slab', serif;
+}
+
+nav {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    
+}
+
+#logo {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#links {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+#links ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:15px;
+    margin-right: 10px;
+}
+
+#links > ul > li {
+
+    display:inline-block;
+    color: bisque;
+    display: block;
+    padding: 5px;
+    letter-spacing: 5px;
+}
+
+#links > ul > li:hover {
+    display: block;
+    color: black;
+    background-color: bisque;
+    padding: 5px;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+
+}
+
+#links > ul > li:active {
+    transform: scale(0.85);
+}
+
+h1.starway {
+    margin-left: 5px;
+    letter-spacing: 5px;
+    background-color: wheat;
+    color: black;
+    padding: 10px;
+    display: block;
+    cursor: pointer;
+    transition: 400ms ease-in-out;
+}
+
+h1.slogan {
+    font-size: 60px;
+    margin:auto;
+    margin-top: 100px;
+    color: bisque;
+    text-align: center;
+    
+}
+
+h4.slogan {
+    font-size: 20px;
+    margin:auto;
+    margin-top: 10px;
+    color: bisque;
+    text-align: center;
+}
+
+button {
+    font-size:18px;
+    margin:auto;
+    margin-top:50px;
+    color: black;
+    background-color: bisque;
+    text-align: center;
+    display: block;
+    border: 2px solid black;
+    padding: 5px 10px 5px 10px;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+    color: bisque;
+    transition: 400ms ease-in-out;
+    cursor: pointer;
+}
+
+h1.longer {
+    letter-spacing: 25px;
+    transition: 400ms ease-in-out;
+}
+
+#span {
+    transition: 1000ms ease-in-out;
+}
+
+#span.longer {
+    letter-spacing: 50px;
+    transition: 1000ms ease-in-out;
+}
+
+
+
+
+span.black {
+    color: black;
+    font-size: 90px;
+    display: block;
+    background-color: bisque;
+    padding: 5px;
+    width: fit-content;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 3px;
+}
+
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+}
