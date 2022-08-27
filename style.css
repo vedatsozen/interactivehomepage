@@ -1,4 +1,6 @@
-* {
+@media only screen and (min-width:480px) {
+    
+    * {
     box-sizing: border-box;
     padding: 0px;
     margin:0px;
@@ -17,7 +19,7 @@ body {
 
 nav {
     height: 50px;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -161,4 +163,326 @@ span.black {
     align-items: center;
     width: fit-content;
     margin: auto;
+}
+
+}
+
+/* MOBILE RESPONSIVE DESIGN */
+
+@media only screen and (max-width:480px) {
+    
+    * {
+    box-sizing: border-box;
+    padding: 0px;
+    margin:0px;
+    font-family: 'Roboto Slab', serif;
+    user-select: none;
+}
+
+body {
+   
+    background-position: top left;
+    background-size:100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Roboto Slab', serif;
+    padding: 0px !important;
+    margin: 0px !important;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+nav {
+    height: 50px;
+    width:95vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:auto;
+    margin-top:0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+#logo {
+    height: 100%;
+    width:50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+}
+
+#links {
+    display: none;
+    height: 100%;
+    width:20vw;
+    
+}
+
+#links ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:15px;
+    margin-right: 10px;
+}
+
+#links > ul > li {
+
+    display:inline-block;
+    color: bisque;
+    display: block;
+    padding: 5px;
+    letter-spacing: 5px;
+}
+
+#links > ul > li:hover {
+    display: block;
+    color: black;
+    background-color: bisque;
+    padding: 5px;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+
+}
+
+#links > ul > li:active {
+    transform: scale(0.85);
+}
+
+
+
+h1.starway {
+    margin-left:0px;
+    letter-spacing: 5px;
+    background-color: wheat;
+    color: black;
+    padding:2px;
+    display: block;
+    cursor: pointer;
+    transition: 400ms ease-in-out;
+    box-sizing: border-box !important;
+}
+
+h1.slogan {
+    font-size:30px;
+    margin:auto;
+    margin-top: 100px;
+    color: bisque;
+    text-align: center;
+    
+}
+
+h4.slogan {
+    font-size: 10px;
+    margin:auto;
+    margin-top: 10px;
+    color: bisque;
+    text-align: center;
+}
+
+button {
+    font-size:18px;
+    margin:auto;
+    color: black;
+    background-color: bisque;
+    text-align: center;
+    display: block;
+    border: 2px solid black;
+    padding:2;
+    letter-spacing:1px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+    color: bisque;
+    transition: 400ms ease-in-out;
+    cursor: pointer;
+}
+
+h1.longer {
+    letter-spacing: 25px;
+    transition: 400ms ease-in-out;
+}
+
+#span {
+    transition: 1000ms ease-in-out;
+}
+
+#span.longer {
+    letter-spacing: 20px;
+    transition: 1000ms ease-in-out;
+}
+
+
+
+
+span.black {
+    color: black;
+    font-size: 40px;
+    display: block;
+    background-color: bisque;
+    padding: 5px;
+    width: fit-content;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 3px;
+}
+
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    gap:2px;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    margin: auto;
+    margin-top: 30px;
+}
+
+img.icon {
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    margin-right: 2px;
+}
+
+#icon {
+
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#hamburgerdiv {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content:right;
+    align-items: center;
+}
+
+#container {
+
+    margin: auto;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 3px;
+    margin-right: 0px;
+    
+    
+}
+
+hr.myhr {
+    background-color: bisque !important;
+    margin: auto;
+    height:2px;
+    width: 35px;
+    position: absolute;
+    border-radius:3px;
+    border: 1px solid bisque;
+}
+
+hr#tophr {
+
+    margin-bottom: 30px;
+    height: 2px;
+}
+
+hr#tophr, hr#bottomhr, hr#center1, hr#center2 {
+    background-color: bisque !important;
+}
+
+hr#bottomhr {
+
+    margin-top: 30px;
+    height: 2px;
+
+}
+
+.rotateme {
+    transform: rotate(45deg);
+    transform-origin: center;
+    transition: 300ms ease-in-out;
+}
+
+
+.rotateme2 {
+    transform:rotate(-45deg);
+    transform-origin: center;
+    transition: 300ms ease-in-out;
+}
+
+.hideme {
+   visibility: hidden;
+}
+
+#slidingmenu {
+
+    position:absolute;
+    height: fit-content;
+    width:90vw;
+    padding: 10px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: bisque;
+    visibility: hidden;
+}
+
+#slidingmenu > ul {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    gap:4px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#slidingmenu > ul > li {
+    font-size:30px;
+    color: black;
+    background-color: bisque;
+    padding: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#slidingmenu > ul > li:hover {
+    display: block;
+    color: bisque;
+    background-color: black;
+    padding: 5px;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+
+}
+
+#slidingmenu > ul > li:active {
+    transform: scale(0.85);
+}
+
+#slidingmenu.show {
+
+    visibility: visible;
+
+}
+
 }
