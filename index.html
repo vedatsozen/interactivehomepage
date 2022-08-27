@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STARWAY - INTERACTIVE WEB SITE HOMEPAGE</title>
+    <title>STARWAY - INTERACTIVE HOME PAGE</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
@@ -23,6 +24,19 @@
         <li>Contact</li>
     </ul>
     </div>
+    <div id="hamburgerdiv">
+    <div id="container">
+
+        <hr class="myhr" id="tophr" />
+    
+        <hr class="myhr" id="center1" />
+    
+        <hr class="myhr" id="center2" />
+    
+        <hr class="myhr" id="bottomhr" />
+    </div>
+    </div> 
+
 </nav> 
 
 <h1 class="slogan">LET'S GO TO <span id="span" class="black">SPACE</span>TIE YOUR BELTS</h1>
@@ -34,6 +48,15 @@
 <button id="bg3" onclick="bg3()">Background 3</button>
 </div>
 
+<div id="slidingmenu">
+    <ul>
+        <li>Home</li>
+        <li>Destinations</li>
+        <li>Buy Ticket</li>
+        <li>Prices</li>
+        <li>Contact</li>
+    </ul>
+</div>
 </body>
 
 
@@ -71,10 +94,23 @@ function longer() {
 
 document.getElementById("span").classList.toggle("longer");
 
+}
+
+document.getElementById("container").addEventListener("click", myfunction)
+
+function myfunction() {
+
+document.getElementById("center1").classList.toggle("rotateme");
+document.getElementById("center2").classList.toggle("rotateme2");
+document.getElementById("tophr").classList.toggle("hideme");
+document.getElementById("bottomhr").classList.toggle("hideme");
+document.getElementById("menu").classList.toggle("menumove");
 
 }
 
-
+document.getElementById("container").addEventListener("click", function() {
+document.getElementById("slidingmenu").classList.toggle("show");
+});
 
 </script>
 
